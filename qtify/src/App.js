@@ -1,7 +1,10 @@
 import Navbar from "./components/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { fetchTopAlbums, fetchSongs, fetchNewAlbums } from "../src/api/api";
+import { fetchTopAlbums, fetchSongs, fetchNewAlbums } from "./api/api";
+
+
+
 
 function App() {
     const [data, setData] = useState({});
